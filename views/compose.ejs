@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>compose</title>
+    <link rel="stylesheet" href="css/compose.css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css">
+    <script src="https://kit.fontawesome.com/987ba4e8ad.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header section -->
+    <header id="header1">
+        <div class="header-container">
+            <div class="logo"><img src="images/lolgo-dailyblog.png" alt=""></div> 
+            <ul class="navitems">
+                <li class="items"><a href="app.html"><i class="fas fa-home"></i>Home</a></li>
+                <li class="items"> <a href=""><i class="fas fa-phone-alt"></i>Contact</a></li>
+                <li class="items"><a  href="about.html"><i class="fas fa-users"></i>About</a></li>
+                <li class="items"><a class="current" href="compose.html"><i class="fas fa-plus "></i></a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- cpmpose route -->
+    <main id="main-section">
+        <div class="compose-container">
+            <h2>New Post</h2>
+
+            <form action="/compose" method="POST">
+                <input name="title" class="title-input" placeholder="title.." type="text">
+           
+                <textarea name="content" class="content-textarea" id="" cols="30" rows="10" placeholder="content..."></textarea>
+            
+                <button  type="submit" class="btn">Post</button>
+            </form>
+            
+        </div>
+    </main>
+</body>
+</html>

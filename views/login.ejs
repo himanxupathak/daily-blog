@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily blog</title>
+
+     <script src="https://kit.fontawesome.com/987ba4e8ad.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css">
+
+</head>
+<body>
+    <div class="container">
+    <!-- header section -->
+        <header id="header">
+            <div class="logo"><img src="images/lolgo-dailyblog.png" alt=""></div> 
+            <ul class="navitems">
+                <li class="items"> <a href="about.html">About Us</a></li>
+                <li class="items"><a href="contact.html">Contact</a></li>
+                <li class="items"><a href="#">Setting</a></li>
+                <li class="items"><a href="/signup">Sign Up</a></li>
+            </ul>
+        </header>
+     <!-- body section-->
+     <div id="outerContainer">
+         <div class="innerContainer">
+            <div class="leftContainer">
+              <form class="form" action="/login" method="POST">
+                <h1 class="l-heading">Login With Us.</h1>
+                <div class="border"></div>
+                <input name="email" type="email" class="input" placeholder="Emal or Phone..">
+                <input name="password" type="password" class="input" placeholder="Enter Password..">
+                <input type="submit" class="btn" value="LOGIN">
+                <div class="or">or</div>
+              </form>
+              <form action="/app.html" class="google-form">
+                 <input type="submit" class="input google-input" value="Login With Google">
+              </form> 
+            </div>
+            <div class="rightContainer"></div>
+         </div>  
+      </div>
+   </div>
+
+</body>
+</html>

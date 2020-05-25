@@ -1,0 +1,119 @@
+
+#header{
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#header .navitems .items {
+  font-size: 1rem;  
+  margin: 7px;
+  padding: 7px;
+}
+.leftContainer{
+    width: 100%;
+    margin: 0px;
+}
+.input, .btn{
+    width: 100%;
+}
+
+/* home page */
+.container-1{
+    max-width: 100%;
+    margin: auto;
+    padding: 0 2px;
+}
+.header-container{
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+ .border1{
+   width: 90%;
+ }
+.main-container{
+  align-items: center;
+  width: 100%;
+  margin: 0px 0px 10px 10px;
+}
+.btn-p{
+  padding: 4px 8px;
+  font-size: .5rem;
+}
+.innerContent h2{
+  font-size: 1rem;
+}
+.innerContent p{
+  font-size: 11px;
+  line-height: 1.2rem;
+}
+.innerContent p i{
+  font-size: 9px;
+}
+.another{
+ flex: 2;
+ margin: 0 10px 10px 0px;
+}
+.left-side{
+ flex: 1;
+}
+.innerContent{
+  padding: 5px;
+}
+.content{
+  font-size: .9rem;
+  line-height: 1.4rem;
+}
+.posts li a, .peoples li a, .posts li a i, .peoples li a i{
+  font-size: 10px;
+} 
+.left-side .card h2{
+  font-size: .8rem;
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+.left-side li{
+  margin: .1rem;
+}
+.card{
+  padding: 5px;
+}
+.innerContainer-1 li a i{
+  margin-right: .2rem;
+}
+#header1 .navitems i{
+  padding-left: 10px;
+}
+#header1 .navitems > *:last-child{
+  font-size: 2.1rem;
+  padding-bottom: 2px;
+}
+/* main contact */
+.contact-info{
+  flex-direction: column;
+}
+#contact .card{
+  width: 100%;
+  max-width: 300px;
+  margin: 10px 0;
+}
+.contact-info{
+  margin-top: 0;
+}
+
+/* about styling */
+
+.pe{
+  width: 100%;
+}
+/* compose */
+#main-section{
+  padding: 0;
+}
+/* post section */
+#post-section{
+  margin: 10px;
+}

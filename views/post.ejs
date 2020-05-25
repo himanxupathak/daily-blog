@@ -1,0 +1,18 @@
+<%- include("Partials/header"); -%>
+    <section id="post-section">
+        <div class="post-container">
+            <div class="innerPost-container card">
+               <h1><%=title%></h1>
+               <p><%=content%></p>
+               <div class="small-container">
+                    <form action="/delete" method="POST" >
+                      <button type="submit" name="delete" class="btn-p" value = "<%=post%>">Delete</button>
+                    </form>
+                    <a href="/edits/<%=post%>"><input type="button" class="btn-p" value="edit"></a>
+                </div>
+              
+            </div>
+        </div>
+    </section>
+
+<%- include("Partials/footer"); -%>

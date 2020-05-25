@@ -1,0 +1,100 @@
+ body{
+    background-color: #e2dedd;
+    font-family: 'Roboto', sans-serif;
+     min-height: 100vh;
+ }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#header1{
+      background: #2f3542;
+}
+.header-container{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+#header1 .navitems{
+  list-style: none;
+  display: flex;
+}
+#header1 .navitems .items {
+  font-size: 1.2rem;  
+  margin: 10px 10px;
+  padding: 10px;
+}
+#header1 .navitems i{
+    margin-right: .3rem;
+    color: white;
+}
+.logo{
+    margin-top: 10px;
+}
+#header1 .navitems .items a{
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    transition: .3 linear;
+}
+#header1 .navitems .items a.current{
+   color: #e2dedd;
+   opacity: .8;
+}
+
+#header1 .navitems .items a:hover{
+   color: #e2dedd;
+   opacity: .9;
+}
+/* compose route */
+
+#main-section{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+.compose-container{
+    width: 80%;
+   margin: auto;
+}
+.title-input, .content-textarea{
+    width: 100%;
+    padding: 18px 40px;
+    margin: 10px 0px;
+    font-size: 16px;
+    color: #293043;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+}
+.compose-container .btn{
+    width: 100%;
+    padding: 18px 40px;
+    margin: 10px 0px;
+    font-size: 16px;
+    color: #ffff;
+    background: #1ABFC1;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+.compose-container .btn:hover{
+  opacity: 0.9;
+  background: #f4f4f4 ;
+  color: black;
+}
+.compose-container h2{
+    font-size: 2rem;
+    margin: 20px 0 10px 8px;
+    display: inline-block;
+    color: #1ABFC1;
+}

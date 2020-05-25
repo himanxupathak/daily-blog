@@ -1,0 +1,86 @@
+<%- include("Partials/editPageHeader"); -%>
+
+<div class="blog-container">
+    <div class="inner-blog-container">
+        <img class="blogger" src="/images/<%=img%>.jpg" alt="img">
+          <div class="blogger-content">
+                <div class="p-des"><%=catogary%></div>
+                <h2><%=name%></h2>
+                <p><%=about%></p>
+                <div class="social">
+                    <a href="http://facebook.com"><i class="fab fa-facebook " target="_blank"></i></a>
+                    <a href="http://instagram.com"><i class="fab fa-instagram " target="_blank"></i></a>
+                    <a href="http://twitter.com"><i class="fab fa-twitter " target="_blank"></i></a>
+                    <a href="http://youtube.com"><i class="fab fa-youtube " target="_blank"></i></a>
+                </div>
+          </div>
+    </div>
+    <div class="blogger-border"></div>
+ <!-- peter -->
+ <% if(name=== "Peter") { %>
+    <div class="blog-post">
+        <h3>If you can dream it you can do it</h3>
+        <p> The most important step towards realising your dreams is articulating them. A ‘dream’ in this case is a professional ambition. For example, a bigger car could be something you wish for but that is not a professional dream. A ‘dream’ would be to achieve success in your startup and begin exporting your products to foreign countries over time. A ‘dream’ could also be to achieve success as an artist by having your work recognised by the art community and wanting to have your work exhibited in a foreign country. Articulating this kind of professional ambition helps create a sense of enduring motivation in the dreamer and can help them move forward on the path to success</p>
+         <p> Realising a vision is often painstaking work. Thomas Edison, the renowned inventor, had explained when asked about his ‘genius’ that ‘genius is one percent inspiration, ninety nine percent perspiration’. The dream or the vision is the inspiration. The perspiration, or work, will determine whether your idea will ever achieve fruition. A great idea is the beginning and not a recipe for success.</p>
+    </div>
+    <div class="blog-post">
+        <h3>Stay positive when faced by failure</h3>
+        <p> Taking failure in your stride will help navigate the peaks and troughs of day to day life that are inevitable in any meaningful endeavour. There will be some dark times on the road, and not letting that affect you adversely is key to ensuring that you continue on your path. Having unreasonable expectations for the reward you think you deserve for your efforts today could quite likely lead to you losing motivation. Make an effort to stay positive and learn from the mistakes you might make. Not repeating mistakes is the hallmark of a great entrepreneur.</p>
+         <p>Successes will find their way to you if you keep making the right efforts. Take the time out to savour them. Savouring success can help renew the spirit and provide energy for greater efforts in the future. Enjoying your successes will also make the journey worthwhile. The journey is just as important as the destination. Time that goes by, never returns.</p>
+    </div>
+ <% }else if(name==="John"){ %>
+     <!-- john -->
+    <div class="blog-post">
+        <h3>coronavirus updates</h3>
+        <p>Total Coronavirus cases in India have crossed the 1.12 lakh-mark while COVID-19 related deaths are over 3400-mark. In India, there are 63,624 active Coronavirus positive cases. So far 45,299  COVID 19 positive patients have recovered. As many as 3435 people have died due to the deadly virus and one has been migrated. The recovery rate in India is now over 39 per cent, as per details shared by the Ministry of Health and Family Welfare. Meanwhile, the national lockdown has been extended and state governments have been issuing Lockdown 4.0 guidelines asking people to adhere to these. Around the world, close to 50 lakh people have been affected by Coronavirus and over 3.28 lakh people have died due to COVID 19. The US, UK, Russia, Italy, Spain and France are the worse affected countries around the world, as per details shared by Johns Hopkins University and Medicine Corornavirus Resource Center.</p>
+        <div class="images">
+            <img src="/images/corona2.jpg" alt="">
+            <img src="/images/corona3.jpg" alt="">
+        </div>
+        <h3>Coronavirus India update: Aarogya Setu APP rules before boarding flight</h3>
+        <p>"It shall be verified by the Central Industrial Security Force/Airport staff at the entry gate. However, Aarogya Setu is not mandatory for children below the age of 14 years," Airports Authority of India (AAI) was quoted as saying by ANI.</p>
+        <h3>Coronavirus cases in India: Over 5600 COVID 19 cases, 130 deaths in last 24 hours</h3>
+        <p>In last 24 hours, as many as 5609 COVID 19 cases have been reported and 132 coronavirus positive patients have died, as per details shared by the Ministry of Health and Family Welfare.</p>
+    </div>
+<%} else if(name==="Brad"){ %> 
+    <!-- brad -->
+    <div class="blog-post">
+        <h1 class="h1-heading">Top 3 Indian street foods</h1>
+        <h3>Best Street Foods Of India That Will Get You Drooling</h3>
+        <p>Indian street foods are known worldwide for their taste, diversity and easy accessibility in various cities like Mumbai, Delhi, Kolkata and Bangalore to name a few. Few street dishes like kathi rolls, daulat ki chaat, chhole bhature and misal pav are quite famous.</p>
+        <div class="images">
+            <img src="/images/streetfood1.jpg" alt="">
+        </div>
+        <h3>1. dabeli</h3>
+        <p>Known to have originated in the Kutch region of Gujarat, dabeli is an interesting blend of softness and crunch in one go. Enter Gujarat and you'll see big streets and narrow lanes thronged with dabeli stalls. This scrumptious cousin of vada pav is prepared by stuffing spiced potato mixture in buttered paos that are grilled on a tawa. A special dabeli masala goes into the making of this delight along with garlic and tamarind chutney. To add an extra crunch to the dish, generous portions of sev gathia and juicy pomegranate seeds are sprinkled over the same. This Indian street food is also very common in the state of Maharashtra and is immensely loved by locals</p>
+          <div class="images">
+            <img src="/images/streetfood2.jpg" alt="">
+        </div>
+        <h3>2. Aloo Tikki, The Delectable Street Food in India</h3>
+        <p>Be it a wedding, a house party, a market stroll, or a visit to the mall; everything is incomplete without having the delicious Aloo Tikki. Though its exact origin is unknown, you'll find it in every corner of the country. No matter you find any other street food item or not, Tikki is something that'll catch your glimpse every time you are on a street food stroll. The mashed potatoes mixed up with spices are fried to get hot and crispy Tikkis. Sometimes served with Tamarind chutney and sometimes with a combo of tamarind and mint, this dish is a bomb of flavours. There are a few vendors who also garnish the dish with reddish and onion adding more to its taste. </p>
+        <div class="images">
+            <img src="/images/streetfood4.jpg" alt="">
+        </div>
+        <h3>3. Momos, the King of Street Food in Delhi</h3>
+        <p>If you are in Delhi, you won't find a single street that doesn't have a momo stall. Momos in Delhi are as famous as Nick and Priyanka's wedding is on social media. Though it is a Tibetan Dish, the North Indians here love it to the core. Adding the twists of masalas and stuffings, a massive variety of momos are sold in the state. Every shop or stall you visit will at least have four types of Momos. From Dolma Aunty's Momos in South Delhi to Momos Point in North Delhi, you'll find hundreds of varieties of this one particular dish. You can't resist the hot piping stuffed dumplings. Mutton, Paneer, Wheat, Tandoori, Fried, Gravy, etc. you name the type, and it will be served. No matter how much you eat these, they'll never be enough!</p>
+    </div>
+ <% } else if(name==="Himanshu") { %> 
+    <!-- himanshu -->
+    <div class="blog-post">
+        <h1 class="h1-heading">5 tips for India first-timers</h1>
+        <h3>1. Keep your cool</h3>
+        <p>As well as its beauty and wonder, India has an often deserved reputation for touts, scams, and other hassles. There are ways you can reduce the chances of being overcharged or cheated, but you will have a few encounters with scammers on your trip, so keep your wits about you and remember that deals that sound too good to be true usually are. In particular, be wary of taxi and rickshaw drivers who insist on taking you to specific hotels, shops or travel agencies – the cost of their commission will be added to your bill.</p>
+        <h3>2. Slow down</h3>
+        <p>Many people try to cram too much into a visit to India and subsequently burn out. To get the best out your trip, concentrate on a few places rather than trying to tick off as many as possible. Seeing one or two places slowly can be much more rewarding than getting round loads of places but not having time to appreciate any of them.</p>
+         <h3>3. Escape the crowds</h3>
+         <p>With over a billion locals, many parts of India are certainly crowded. The bustle and mayhem can be fun, particularly if there's a festival in town, but it's easy to reach the point of saturation.</p>
+         <h3>4. Stay healthy</h3>
+         <p>India has a somewhat notorious reputation amongst travellers for so-called Delhi belly (an upset stomach). No one wants to get ill, particularly if you’re on a shorter trip, so it pays to take steps to avoid a dodgy tum. Never drink tap water, and steer clear of any food that may have been washed in it. As a precaution, avoid ice, ice cream, and salads and fruit you haven't just peeled yourself.</p>
+         <h3>5. Pick the perfect route</h3>
+         <p>India packs a lot into a massive space, and you'll never have time to see it all on one trip. Think about what interests you, what you like doing and how much time you have, and tailor your trip accordingly.</p>
+    </div>
+<% } %>
+</div>
+
+
+<%- include("Partials/editPageFooter"); -%>

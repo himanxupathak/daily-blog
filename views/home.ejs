@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <script src="https://kit.fontawesome.com/987ba4e8ad.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css\home.css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css">
+</head>
+<body>
+  <!-- header section -->
+    <header id="header1">
+        <div class="header-container">
+            <div class="logo"><img src="images/lolgo-dailyblog.png" alt=""></div> 
+            <ul class="navitems">
+                <li class="items"><a class="current" href="app.html"><i class="fas fa-home"></i>Home</a></li>
+                <li class="items"> <a href="/contact"><i class="fas fa-phone-alt"></i>Contact</a></li>
+                <li class="items"><a href="/about"><i class="fas fa-users"></i>About</a></li>
+                <li class="items"><a href="/compose"><i class="fas fa-plus "></i></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- main section -->
+    <main id="main">
+       <div class="container-1">
+           <div class="innerContainer-1">
+               <aside class="left-side">
+
+                   <div class="top card">
+                       <h2 class="heading-1">Popular Post By.</h2>
+                       <ul class="peoples">
+                           <% bloggers.forEach(function(blogger){ %>
+                              <li><a href="/peoples/<%=blogger.name%>/<%=blogger.about%>/<%=blogger.img%>/<%=blogger.catogary%>"><i class="fas fa-user-alt"></i><%= blogger.name %></a></li>
+                           <% }); %>
+                       </ul>
+                    </div>
+
+                 <div class="bottom card">
+                    <h2 class="heading-1">Trending Posts</h2>
+                    <ul class="posts">
+                        <li><a href=""><i class="fas fa-viruses "></i>Coronavirus</a></li>
+                        <li><a href=""><i class="fas fa-lock"></i>India Lockdown 3.0</a></li>
+                        <li><a href=""><i class="fas fa-user-md"></i>WHO latest Post</a></li>
+                        <li><a href=""><i class="fas fa-laptop-house"></i>Work From Home</a></li>
+                        <li><a href=""><i class="fas fa-coins"></i>Word's Economy</a></li>
+                        <li><a href=""><i class="fas fa-book-reader"></i>Education</a></li>
+                    </ul>
+                </div>
+               </aside>     
+               <div class="another">
+                <div class="main-container card">
+                    <div class="innerContent">
+                        <p><i class="name">@himanshu</i></p>
+                        <h2>Coronavirus</h2>
+                        <div class="border1"></div>
+                        <p class="content">The virus that causes COVID-19 is mainly transmitted through droplets generated when an infected person coughs, sneezes, or exhales. These droplets are too heavy to hang in the air, and quickly fall on floors or surfaces, You can be infected by breathing in the virus if you are within close proximity of someone who has COVID-19, or by touching a contaminated surface and then your eyes, nose or mouth</p>
+                        <input type="button" class="btn-p" value="read more">
+                    </div>
+                </div>
+                    
+                     <% posts.forEach(function(post){ %>
+                       <div class="main-container card">
+                        <div class="innerContent">
+                        <h2><%= post.title %></h2>
+                        <div class="border1"></div>
+                        <p class="content"><%=post.content.substring(0,200 ) + " ..."%></p>
+                        <a href="/posts/<%=post._id%>"><input type="submit" class="btn-p" value="read more"></a>  
+                    </div>
+                </div>
+                <% }); %>
+              
+             </div>
+           </div>
+          
+       </div>
+    </main>
+
+</body>
+</html>
