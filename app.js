@@ -66,6 +66,11 @@ app.get("/contact",function(req,res){
 app.get("/about",function(req,res){
     res.render("about");
 });
+app.get("/popular/:link",function(req,res){
+   const link = req.params.link;
+    
+    res.render("popular",{link});
+});
 
 app.get("/dynamicPost", function(req, res){ 
     Post.find({},function(err, posts){
@@ -76,8 +81,7 @@ app.get("/dynamicPost", function(req, res){
                 res.render("home", {
                     posts: posts,
                     user:users,
-                    bloggers: names,
-                    userEmail: users.email
+                    bloggers: names
                 });
             })
           
