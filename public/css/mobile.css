@@ -1,25 +1,33 @@
 
 #header{
-    margin: 0px;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-#header .navitems .items {
+#header .navitems li{
   font-size: 1rem;  
-  margin: 7px;
-  padding: 7px;
+  margin: 2px;
+  padding: 1px;
 }
-.leftContainer{
+#header .navitems i{
+  font-size: 2rem;
+}
+#header .leftContainer{
     width: 100%;
     margin: 0px;
 }
 .input, .btn{
     width: 100%;
 }
-
 /* home page */
+  #header1 .navitems i:not(.compose){
+    display: none;
+  }
+  #header1 .compose{
+    font-size: 1.5rem;
+  }
 .container-1{
     max-width: 100%;
     margin: auto;
@@ -30,9 +38,7 @@
    align-items: center;
    justify-content: center;
  }
- .border1{
-   width: 90%;
- }
+
 .main-container{
   align-items: center;
   width: 100%;
@@ -74,7 +80,9 @@
   text-align: center;
   margin-bottom: 2px;
 }
-
+.right-side{
+  
+}
 .left-side li{
   margin: .1rem;
 }
@@ -84,12 +92,9 @@
 .innerContainer-1 li a i{
   margin-right: .2rem;
 }
-#header1 .navitems i{
-  padding-left: 10px;
-}
 #header1 .navitems > *:last-child{
   font-size: 2.1rem;
-  padding-bottom: 2px;
+  
 }
 /* main contact */
 .contact-info{
@@ -116,4 +121,11 @@
 /* post section */
 #post-section{
   margin: 10px;
+}
+/* register */
+.innerContainer{
+  width: 100%;
+}
+.leftContainer{
+  width: 100%;
 }

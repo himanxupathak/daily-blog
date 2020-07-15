@@ -1,6 +1,7 @@
- body{
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
+body{
     background-color: #e2dedd;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open sans', sans-serif;
  }
 *{
     margin: 0;
@@ -110,13 +111,6 @@ li{
     margin: .5rem;
     font-size: 1.2rem;
 }
-.border1{
-    width: 400px;
-    height: 0.5px;
-    background: #1ABFC1;
-    border-radius: 1px;
-    margin: .4rem 0;
-}
 .content{
     font-size: 1.1rem;
     line-height: 1.5rem;
@@ -139,9 +133,11 @@ li{
     border-radius: 25px;
     text-decoration: none;
 } */
-
+.display{
+    display: inline;
+}
 .btn-p{
-    padding: 9px 18px;
+    padding: 5px 10px;
     margin: 10px 0px 0px 0px;
     font-size: 16px;
     color: #ffff;
@@ -156,4 +152,63 @@ li{
   opacity: 0.9;
   background: #777 ;
   color: white;
+}
+.edit-btn{
+    background-color: rgb(17, 165, 17);
+}
+.delete-btn{
+    background-color: rgb(199, 29, 29);
+}
+/* social */
+.social i{
+    margin: 2px;
+    color: grey;
+    font-size: 1.3rem;
+    transition: .6s linear;
+    opacity: 0.8;
+}
+.social i:hover{
+    transform: scale(1.2);
+    color: rgb(160, 158, 158);
+}
+
+/* special */
+.special{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* user */
+.user {
+	display: flex;
+	margin-top: auto;
+}
+
+.user img {
+	border-radius: 50%;
+	margin-right: 10px;
+	height: 40px;
+	width: 40px;
+}
+
+.user-infor h5 {
+	margin: 0;
+}
+
+.user-infor small {
+	color: #888785;
+}
+/* post body */
+.post_body{
+    display: flex;
+    justify-content: space-between;
+}
+.post_body small{
+    color: #888785;
+    padding-top: 5px
+}
+.post_body i{
+  color: ;
+  font-size: 1.7rem;
+  margin-left: 2px;
 }

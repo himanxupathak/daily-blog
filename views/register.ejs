@@ -3,53 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily blog</title>
-             <link
+    <title>Register</title>
+
+     <script src="https://kit.fontawesome.com/987ba4e8ad.js" crossorigin="anonymous"></script>
+         <link
       rel="stylesheet"
       href="https://bootswatch.com/4/journal/bootstrap.min.css"
     />
-     <script src="https://kit.fontawesome.com/987ba4e8ad.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/signup.css">
+    
     <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css">
 
 </head>
 <body>
-    <div class="container">
     <!-- header section -->
+    <nav id="navbar">
         <header id="header">
             <div class="logo"><img src="images/logo-dailyblog.png" alt=""></div> 
             <ul class="navitems">
-                <li class="items"> <a href="/about">About Us</a></li>
-                <li class="items"><a href="/contact">Contact</a></li>
-                <li class="items"><a href="#">Setting</a></li>
-                <li class="items"><a href="/register">Sign Up</a></li>
+                <li class="items"> <a href="about.html">About Us</a></li>
+                <li class="items"><a href="contact.html">Contact</a></li>
+                <li class="items"><a href="login">Login</a></li>
+                <li class="items"><a class="current-a" href="#">Register</a></li>
             </ul>
         </header>
+    </nav>
+     
      <!-- body section-->
+    <div class="container">
      <div id="outerContainer">
+        
          <div class="innerContainer">
             <div class="leftContainer">
-              <form class="form" action="/login" method="POST">
-                <h1 class="l-heading">Login With Us.</h1>
-        
-                <!-- flash messages -->
-                <%- include('Partials/messages'); %>
+              <form class="form" action="/register" method="POST">
+                <h1 class="l-heading">Register</h1>
+
+              <!-- flash messages -->
+              <%- include('Partials/messages'); %>
+
                 <div class="border"></div>
-                <input name="email" type="email" class="input" placeholder="Email or Phone..">
-                <input name="password" type="password" class="input" placeholder="Enter Password..">
-                <input type="submit" class="btn" value="LOGIN">
+                <input name="email" type="email" class="input" placeholder="Emal or Phone.." value="<%= typeof email != 'undefined' ? email : '' %>" />
+                <input name="password" type="password" class="input" placeholder="Enter Password.." value="<%= typeof password != 'undefined' ? password : '' %>" />
+                <input name="confirm" type="password" class="input" placeholder="confirm Password.." value="<%= typeof confirm != 'undefined' ? confirm: '' %>" />
+                <input type="submit" class="btn" value="Register">
                 <div class="or">or</div>
               </form>
               <form action="/app.html" class="google-form">
-                 <input type="submit" class="input google-input" value="Login With Google">
+                 <input type="submit" class="input google-input" value="SignUp With Google">
               </form> 
             </div>
-            <div class="rightContainer"></div>
+            
          </div>  
       </div>
    </div>
-   <script
+    <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"

@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
 body{
     height: 100vh;
     width: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open sans', sans-serif;
     background: #e2dedd
     overflow: hidden;
 }
@@ -30,8 +31,8 @@ body{
     justify-content: flex-start;
 }
 #header .navitems .items {
-  margin: 16px 8px;
-  padding: 10px;
+  margin: 13px 7px;
+  padding: 8px;
  
 }
 .logo{
@@ -59,16 +60,15 @@ body{
     overflow: hidden;
 }
 .innerContainer{
-    margin-top: .5rem;
     display: flex;
     justify-content: center;
-    height: 490px;
+    height: 100vh;
 }
 .leftContainer{
-    width: 60%;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+   
 }
 .l-heading{
     color: #293043;
@@ -87,7 +87,7 @@ body{
 }
 .input{
     width: 100%;
-    padding: 18px 40px;
+    padding: 10px 20px;
     margin: 10px 0px;
     font-size: 16px;
     color: #293043;
@@ -99,7 +99,7 @@ body{
 }
 .btn{
     width: 100%;
-    padding: 18px 40px;
+    padding: 10px 15px;
     margin: 10px 0px;
     font-size: 16px;
     color: #ffff;

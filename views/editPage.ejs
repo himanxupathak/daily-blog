@@ -6,7 +6,7 @@
 
             <form action="/edits" method="POST">
                 <input name="title" value="<%=title%>" class="title-input" placeholder="title.." type="text">
-                <input class="title-input" type="text" name="content" value="<%=content%>" placeholder="content...">
+                <textarea class="title-input" name="content" id="" placeholder="content..." cols="30" rows="10"><%=content%></textarea>
                 <button class="btn" type="submit" name="buttonId" value="<%=editId%>">Save Changes</button>
             </form>
             
