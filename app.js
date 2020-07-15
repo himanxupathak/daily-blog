@@ -21,7 +21,7 @@ const names = require("./models/bio");
 const initializePassport = require("./config/passport-config")(passport);
 
 const app = express();
-
+const PORT = process.env.PORT || 5000;
 // db config
 const db = require("./config/keys").mongoURI;
 mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
@@ -229,7 +229,7 @@ app.get("/peoples/:name/:about/:img/:catogary", function(req, res){
 });
 
 
-app.listen(5000, function(req, res){
-    console.log("server started on port 5000");
+app.listen(PORT, function(req, res){
+    console.log(`server is running on port ${PORT}`);
 });
 
