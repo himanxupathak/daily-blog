@@ -2,6 +2,7 @@
 if(process.env.NODE_ENV !== "production"){
     require("dotenv").config();
 }
+const PORT = process.env.PORT || 5000;
 const express = require("express");
 const ejs = require("ejs");
 const bodyParser =  require("body-parser");
@@ -21,7 +22,7 @@ const names = require("./models/bio");
 const initializePassport = require("./config/passport-config")(passport);
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+
 // db config
 const db = require("./config/keys").mongoURI;
 mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
