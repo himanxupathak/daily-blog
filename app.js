@@ -5,11 +5,11 @@ const ejs = require("ejs");
 const bodyParser =  require("body-parser");
 const _ = require("lodash");
 const mongoose = require("mongoose");
-const  bcrypt = require("bcrypt");
+const  bcrypt = require("bcryptjs");
 const passport = require("passport");
 const {ensureAuthenticated} = require("./config/authentication");
-const flash = require("connect-flash");
 const session = require("express-session");
+const flash = require("connect-flash");
 const methodOverride = require('method-override')
 
 const User = require("./models/User");
@@ -33,9 +33,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static("public"));
 app.use(methodOverride('_method'))
 app.use(session({
-    secret: process.env.SESSION_SECRET,
-    resave: true,
-    saveUninitialized:true
+    secret: "thisismysecret",
+    resave: false,
+    saveUninitialized:false
 }))
 
 app.use(passport.initialize())
