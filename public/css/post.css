@@ -87,3 +87,9 @@ body{
     margin-bottom: 50px;
    
 }
+.edit-btn{
+    background-color: rgb(17, 165, 17);
+}
+.delete-btn{
+    background-color: rgb(199, 29, 29);
+}

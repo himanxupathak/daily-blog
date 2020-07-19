@@ -1,4 +1,6 @@
-
+#loginRegister{
+   background: url("../images/background.jpg") no-repeat center center/cover;
+}
 #header{
     overflow: hidden;
     display: flex;
@@ -6,9 +8,9 @@
     justify-content: center;
     flex-direction: column;
 }
-#header .navitems li{
-  font-size: 1rem;  
-  margin: 2px;
+#header .navitems .items{
+  font-size: .9rem;  
+  margin: 20px 13px;
   padding: 1px;
 }
 #header .navitems i{
@@ -80,9 +82,6 @@
   text-align: center;
   margin-bottom: 2px;
 }
-.right-side{
-  
-}
 .left-side li{
   margin: .1rem;
 }
@@ -93,8 +92,10 @@
   margin-right: .2rem;
 }
 #header1 .navitems > *:last-child{
-  font-size: 2.1rem;
-  
+  font-size: 2.1rem; 
+}
+.social i, .post_body i{
+  font-size: 1rem;
 }
 /* main contact */
 .contact-info{

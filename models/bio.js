@@ -9,12 +9,12 @@ const names = [{
     "img": "blogger2",
     "catogary": "blogger"
 }, {
-    "name": "Shubham Aggarwal",
+    "name": "Ved Kandpal",
     "about": "Well known for food blogging exploring indian street food every weak",
     "img": "blogger3",
     "catogary": "food"
 }, {
-    "name": "Amir Ali",
+    "name": "Himanshu Pathak",
     "about": "Travel blogger exploring new and intresting places around the globe ",
     "img": "blogger4",
     "catogary": "travelling"

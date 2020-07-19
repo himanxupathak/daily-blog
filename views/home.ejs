@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,25 +7,24 @@
     <title>HomePage</title>
     <script src="https://kit.fontawesome.com/987ba4e8ad.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato|Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css\home.css">
+    <link rel="stylesheet" href="css/home.css">
     
     <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css">
 </head>
 <body>
-  <!-- header section -->
-    <header id="header1">
-        <div class="header-container">
+    <!-- header section -->
+    <nav id="navbar">
+        <header id="header">
             <div class="logo"><img src="images/logo-dailyblog.png" alt=""></div> 
             <ul class="navitems">
-                <li class="items"><a class="current" href="/home"><i class="fas fa-home"></i>Home</a></li>
-                <li class="items"> <a href="/contact"><i class="fas fa-phone-alt"></i>Contact</a></li>
-                <li class="items"><a href="/about"><i class="fas fa-users"></i>About</a></li>
-                <li class="items"><a href="/logout">LogOut</a></li>
-                <li class="items"><a href="/compose"><i class="fas fa-plus compose"></i></a></li>
+                <li class="items"><a class="current-a" href="#">Home</a></li>
+                <li class="items"> <a href="/about">About</a></li>
+                <li class="items"><a href="/contact">Contact</a></li>
+                <li class="items"><a href="/logout">Logout</a></li>
+                <li class="items"><a href="/compose">New</a></li>
             </ul>
-        </div>
-    </header>
-
+        </header>
+    </nav>
     <!-- main section -->
     <main id="main">
        <div class="container-1">
@@ -61,9 +59,9 @@
                                 <div class="special">
                                     <div class="title_email">
                                          <div class="user">
-                                            <img src="/images/person3.jpeg" alt="user 2" />
+                                            <img src="/images/user.png" alt="user 2" />
                                             <div class="user-infor">
-                                                 <h4><%= post.userEmail%></h4>
+                                                 <h4><%= post.userEmail.substring(0,4) + ".."%></h4>
                                                 <small><%= post.createdAt.toLocaleDateString()%></small>
                                             </div>
                                         </div>
@@ -75,7 +73,7 @@
                                     </div>
                                 </div>
                             <h2><%= post.title %></h2>
-                            <p class="content"><%=post.content.substring(0,600 ) + " ..."%></p>
+                            <p class="content"><%=post.content.substring(0,200 ) + " ..."%></p>
                             <div class="post_body">
                                <div class="all_btns">
                                     <a href="/posts/<%=post._id%>"><input type="submit" class="btn-p" value="read more"></a>  
@@ -84,7 +82,7 @@
                                       <button type="submit" name="delete" class="btn-p delete-btn">Delete</button>
                                     </form>  
                                 </div>
-                                <small>share post <i class="fas fa-share"></i></small>
+                                <small><i class="fas fa-share"></i></small>
                             </div>
                             
                            </div>
