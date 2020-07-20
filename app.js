@@ -1,4 +1,5 @@
 //jshint esversion:6
+require("dotenv").config();
 const PORT = process.env.PORT || 5000;
 const express = require("express");
 const ejs = require("ejs");
@@ -33,7 +34,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static("public"));
 app.use(methodOverride('_method'))
 app.use(session({
-    secret: "thisismysecret",
+    secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized:false
 }))
@@ -61,9 +62,10 @@ app.get("/", function(req,res){
 // home page route
 app.get("/home", ensureAuthenticated, async function (req,res){
      const allPosts = await Post.find().sort({ createdAt: "desc" });
+     const users = await User.find()
         res.render("home", {
             posts: allPosts,
-            user: req.user,
+            users: users,
             bloggers: names  
     }) 
 });
@@ -179,12 +181,12 @@ app.post("/compose", async function(req,res){
 
 // delete route 
 app.delete("/delete/:id", async (req, res) => {
-    await Post.findByIdAndDelete(req.params.id)
+    await Post.findByIdAndDelete(req.params.id);
     res.redirect('/home');
 })
 
 // edit route
-app.post("/edits", function(req, res){
+ app.post("/edits", function(req, res){
     const editTitle = req.body.title;
     const editContent = req.body.content;
     const id = req.body.buttonId;

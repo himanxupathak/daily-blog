@@ -64,9 +64,9 @@ body{
     min-height: 300px;
 }
 .btn-p{
-    padding: 9px 18px;
+    padding: 3px 15px;
     margin: 10px 0px 0px 5px;
-    font-size: 16px;
+    font-size: 1.5rem;
     color: #ffff;
     background: #1ABFC1;
     border: none;
@@ -89,7 +89,4 @@ body{
 }
 .edit-btn{
     background-color: rgb(17, 165, 17);
-}
-.delete-btn{
-    background-color: rgb(199, 29, 29);
 }

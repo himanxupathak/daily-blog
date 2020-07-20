@@ -78,9 +78,9 @@
                                <div class="all_btns">
                                     <a href="/posts/<%=post._id%>"><input type="submit" class="btn-p" value="read more"></a>  
                                     <a href="/edits/<%=post._id%>"><input type="submit" class="btn-p edit-btn" value="edit"></a>
-                                    <form action="/delete/<%= post.id %>?_method=DELETE" method="POST" class="display" >
-                                      <button type="submit" name="delete" class="btn-p delete-btn">Delete</button>
-                                    </form>  
+                                        <form action="/delete/<%= post.id %>?_method=DELETE" method="POST" class="display" >
+                                          <button type="submit" name="delete" class="btn-p delete-btn">Delete</button>
+                                        </form>  
                                 </div>
                                 <small><i class="fas fa-share"></i></small>
                             </div>

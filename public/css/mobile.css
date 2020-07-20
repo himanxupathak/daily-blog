@@ -48,13 +48,13 @@
 }
 .btn-p{
   padding: 4px 8px;
-  font-size: .5rem;
+  font-size: .7rem;
 }
 .innerContent h2{
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .innerContent p{
-  font-size: 11px;
+  font-size: .8rem;
   line-height: 1.2rem;
 }
 .innerContent p i{
@@ -129,4 +129,10 @@
 }
 .leftContainer{
   width: 100%;
+}
+
+/* post page */
+.compose-container{
+   width: 95%;
+   margin: auto;
 }
